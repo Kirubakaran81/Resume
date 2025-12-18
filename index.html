@@ -1,126 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kirubakaran Kamatchi – Information Security & Infrastructure Manager Resume" />
-  <meta name="keywords" content="Information Security Manager, ISO 27001, SOC 2, HIPAA, Azure Security, IAM, VAPT" />
-  <meta property="og:title" content="Kirubakaran Kamatchi – Information Security & Infrastructure Manager" />
-  <meta property="og:description" content="Professional resume of an Information Security & Infrastructure Manager with 12+ years experience" />
-  <meta property="og:type" content="website" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirubakaran Kamatchi - Information Security & Infrastructure Manager Resume">
+    <title>Kirubakaran Kamatchi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <title>Kirubakaran Kamatchi | Information Security Manager</title>
-  <link rel="stylesheet" href="style.css" />
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header .title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #2ecc71;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .job {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .job:last-child {
+            border-bottom: none;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .job-period {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
+        .company {
+            color: #3498db;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .location {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .degree {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .institution {
+            color: #3498db;
+            font-size: 1.05em;
+            margin-top: 5px;
+        }
+
+        .year {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-category p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        .certifications {
+            display: grid;
+            gap: 15px;
+        }
+
+        .cert-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #2ecc71;
+        }
+
+        .cert-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.05em;
+        }
+
+        .cert-details {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+
+        .achievements {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .achievements h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .achievements ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .achievements li {
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .achievements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .btn-print {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-print:hover {
+            background: #2980b9;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .btn-print {
+                display: none;
+            }
+            header {
+                background: #2c3e50;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+            header {
+                padding: 25px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <button class="btn-print" onclick="window.print()">Download PDF</button>
+    
+    <div class="container">
+        <header>
+            <h1>Kirubakaran Kamatchi</h1>
+            <div class="title">Information Security & Infrastructure Manager</div>
+            <div class="contact-info">
+                <span>📧 kkirubakaran@gmail.com</span>
+                <span>📱 +91 99414-80275</span>
+                <span>📍 Chennai, India</span>
+                <span><a href="https://linkedin.com/in/kiruba81" target="_blank">🔗 linkedin.com/in/kiruba81</a></span>
+            </div>
+        </header>
 
-<header class="header">
-  <h1>Kirubakaran Kamatchi</h1>
-  <h2>Information Security & Infrastructure Manager</h2>
-  <p>Chennai, India | <a href="mailto:kkirubakaran@gmail.com">kkirubakaran@gmail.com</a> | +91 99414 80275</p>
-  <p>
-    <a href="https://www.linkedin.com/in/kiruba81" target="_blank">LinkedIn</a>
-  </p>
-</header>
+        <div class="content">
+            <section>
+                <h2>Professional Summary</h2>
+                <div class="summary">
+                    Results-driven Information Security & Infrastructure Manager with 15+ years of progressive IT security experience. Expertise in Identity and Access Management (IAM), Vulnerability Assessment and Penetration Testing (VAPT), and compliance frameworks including ISO 27001, SOC 1/2, HIPAA, and HITRUST. Proven track record of reducing security incidents by 30%, improving compliance scores by 40%, and enhancing operational resilience through strategic security initiatives. Specialized in endpoint security, SIEM implementation, business continuity planning, and insider-threat defense across cloud and on-premises environments.
+                </div>
+            </section>
 
-<section>
-  <h3>Professional Summary</h3>
-  <p>
-    Information Security & Infrastructure Manager with expertise in Identity and Access Management (IAM), Vulnerability Assessment and Penetration Testing (VAPT), and compliance frameworks including ISO 27001, SOC 1/2, and HIPAA. Proven ability to reduce risk, enhance incident response, and improve compliance maturity across cloud and on‑prem environments.
-  </p>
-</section>
+            <section>
+                <h2>Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">IT Security Manager</div>
+                            <div class="company">ERP Shipping Company Pvt Ltd <span class="location">• Chennai, India</span></div>
+                        </div>
+                        <div class="job-period">Oct 2023 – Nov 2025</div>
+                    </div>
+                    <ul>
+                        <li>Strengthened IAM governance by implementing Microsoft Entra ID with MFA enforcement and Conditional Access policies, reducing unauthorized access incidents by 30% through quarterly access reviews</li>
+                        <li>Enhanced endpoint security posture by administering ESET Protect Cloud and Trend Micro Apex One, improving threat remediation speed by 40% through automated response workflows</li>
+                        <li>Implemented comprehensive insider-threat monitoring using Teramind UBA and DLP solutions, reducing data exfiltration risks by 25% through real-time user behavior analytics</li>
+                        <li>Performed SIEM-driven threat detection and security analysis via Datadog, lowering false positive alerts by 20% through refined correlation rules and custom dashboards</li>
+                        <li>Improved audit readiness for SOC 1, SOC 2, and ISO 27001 certifications by closing 15+ compliance gaps and aligning IT processes with Annex A security controls</li>
+                        <li>Optimized Cloudflare log analytics and threat intelligence dashboards, enhancing detection capabilities and reducing mean time to response (MTTR) by 25%</li>
+                        <li>Built comprehensive Zabbix monitoring infrastructure with custom dashboards, improving IT service uptime visibility and reducing unplanned downtime by 20%</li>
+                    </ul>
+                </div>
 
-<section>
-  <h3>Technical Expertise</h3>
-  <ul class="skills">
-    <li>ISO 27001, SOC 1/2, HIPAA, HITRUST, NIST</li>
-    <li>Microsoft Entra ID / Azure AD</li>
-    <li>VAPT – Tenable, Nessus, Qualys, Veracode</li>
-    <li>SIEM & Endpoint Security (ESET, Trend Micro, Symantec)</li>
-    <li>Risk Assessment & Incident Management</li>
-    <li>BCP / DR Planning</li>
-    <li>Insider Threat & DLP (Teramind)</li>
-    <li>Infrastructure & Monitoring (Zabbix, Datadog)</li>
-  </ul>
-</section>
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Manager – Information Security & Infrastructure</div>
+                            <div class="company">Veryx Technologies Pvt Ltd <span class="location">• Chennai, India</span></div>
+                        </div>
+                        <div class="job-period">Sep 2022 – Oct 2023</div>
+                    </div>
+                    <ul>
+                        <li>Developed and implemented ISO 27001-aligned security policies and procedures, increasing organizational compliance scores by 40% across all departments</li>
+                        <li>Directed enterprise infrastructure security strategy covering networks, servers, cloud platforms, and applications with zero security breaches during tenure</li>
+                        <li>Led Business Continuity Planning (BCP) and Disaster Recovery (DR) initiatives and testing exercises, improving RTO/RPO compliance by 25%</li>
+                        <li>Conducted SIEM integration and continuous security monitoring programs, reducing incident response times by 30% through automated alerting</li>
+                        <li>Delivered comprehensive security awareness training programs, raising employee security maturity ratings by 40% and reducing phishing susceptibility</li>
+                    </ul>
+                </div>
 
-<section>
-  <h3>Professional Experience</h3>
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Information Security Auditor</div>
+                            <div class="company">Global Healthcare Billing Partners <span class="location">• Chennai, India</span></div>
+                        </div>
+                        <div class="job-period">Mar 2022 – Sep 2022</div>
+                    </div>
+                    <ul>
+                        <li>Led HIPAA and HITRUST compliance audits, reducing open non-compliance items through improved documentation and implementation of security controls</li>
+                        <li>Developed and executed comprehensive BCP workflows, increasing organizational preparedness and resilience by 30%</li>
+                        <li>Enhanced security policies and procedures to strengthen healthcare information governance and ensure regulatory compliance</li>
+                        <li>Conducted gap assessments and provided remediation recommendations for Protected Health Information (PHI) handling processes</li>
+                    </ul>
+                </div>
 
-  <article>
-    <h4>IT Security Manager – ERP Shipping Company Pvt Ltd</h4>
-    <span class="date">Oct 2023 – Nov 2025 | Chennai</span>
-    <ul>
-      <li>Implemented Microsoft Entra ID with MFA and Conditional Access, reducing unauthorized access incidents by 30%.</li>
-      <li>Administered ESET Protect Cloud and Trend Micro Apex One, improving remediation speed by 40%.</li>
-      <li>Deployed insider threat monitoring using Teramind UBA & DLP, reducing data exfiltration risk by 25%.</li>
-      <li>Improved SOC 1, SOC 2, and ISO 27001 audit readiness by closing 15+ compliance gaps.</li>
-      <li>Optimized Cloudflare and Zabbix monitoring, reducing MTTR and unplanned downtime by 20–25%.</li>
-    </ul>
-  </article>
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Technical Support Engineer</div>
+                            <div class="company">Exela Technologies Pvt Ltd <span class="location">• Chennai, India</span></div>
+                        </div>
+                        <div class="job-period">Nov 2008 – Mar 2022</div>
+                    </div>
+                    <ul>
+                        <li>Managed enterprise-wide vulnerability management program, reducing high-severity security issues by 30% through systematic patching and mitigation strategies</li>
+                        <li>Executed Business Continuity Planning (BCP) and Disaster Recovery (DR) programs across multiple business units, minimizing outage impact and ensuring operational resilience</li>
+                        <li>Conducted comprehensive risk assessments, internal security audits, and root cause analysis (RCA)-driven incident investigations to strengthen overall security posture</li>
+                        <li>Delivered Security Operations Center (SOC) escalation support and coordinated with cross-functional teams for timely remediation of critical security incidents</li>
+                        <li>Provided technical leadership for infrastructure projects including server migrations, network upgrades, and security tool implementations</li>
+                    </ul>
+                </div>
 
-  <article>
-    <h4>Manager – Information Security & Infrastructure – Veryx Technologies Pvt Ltd</h4>
-    <span class="date">Sep 2022 – Oct 2023 | Chennai</span>
-    <ul>
-      <li>Developed ISO 27001 aligned policies increasing compliance scores by 40%.</li>
-      <li>Directed enterprise security across networks, servers, cloud, and applications.</li>
-      <li>Led BCP/DR planning and testing improving RTO/RPO compliance by 25%.</li>
-      <li>Conducted SIEM integration reducing incident response time by 30%.</li>
-    </ul>
-  </article>
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Technical Support Engineer</div>
+                            <div class="company">Quick Heal Technologies Pvt Ltd <span class="location">• Chennai, India</span></div>
+                        </div>
+                        <div class="job-period">Oct 2005 – Oct 2008</div>
+                    </div>
+                    <ul>
+                        <li>Performed malware analysis, endpoint troubleshooting, and comprehensive root cause analysis (RCA) documentation for security incidents</li>
+                        <li>Trained end-users and technical teams on security best practices, threat prevention controls, and safe computing practices</li>
+                        <li>Assisted customers via phone, email, and chat channels to deliver prompt and effective technical solutions for antivirus and endpoint security issues</li>
+                    </ul>
+                </div>
+            </section>
 
-  <article>
-    <h4>Senior Information Security Auditor – Global Healthcare Billing Partners</h4>
-    <span class="date">Mar 2022 – Sep 2022 | Chennai</span>
-    <ul>
-      <li>Led HIPAA and HITRUST audits improving compliance documentation and controls.</li>
-      <li>Developed BCP workflows increasing preparedness by 30%.</li>
-    </ul>
-  </article>
+            <section>
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="degree">Master of Science in Electronics</div>
+                    <div class="institution">St. Josephs College Autonomous • Trichy, India</div>
+                    <div class="year">Jun 2001 – Apr 2003</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree">Bachelor of Science in Electronics Science</div>
+                    <div class="institution">Sengunthar Arts and Science College • Tiruchengodu, India</div>
+                    <div class="year">Jun 1998 – Jun 2001</div>
+                </div>
+            </section>
 
-  <article>
-    <h4>Senior Technical Support Engineer – Exela Technologies Pvt Ltd</h4>
-    <span class="date">Nov 2008 – Mar 2022 | Chennai</span>
-    <ul>
-      <li>Managed vulnerability management programs reducing high‑severity issues by 30%.</li>
-      <li>Executed BCP and DR programs across multiple business units.</li>
-      <li>Performed risk assessments, internal audits, and SOC escalation support.</li>
-    </ul>
-  </article>
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Security Frameworks & Compliance</h3>
+                        <p>ISO 27001, SOC 1/2, HIPAA, HITRUST, NIST Cybersecurity Framework, PCI DSS</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Identity & Access Management</h3>
+                        <p>Microsoft Entra ID, Azure AD, Active Directory, MFA, Conditional Access, SSO</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Vulnerability Management</h3>
+                        <p>Tenable, Nessus, Qualys, Veracode, Rapid7, OpenVAS, vulnerability scanning and remediation</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>SIEM & Monitoring</h3>
+                        <p>Datadog, Zabbix, Splunk, log analysis, correlation rules, threat detection, security analytics</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Endpoint Security</h3>
+                        <p>ESET Protect Cloud, Trend Micro Apex One, Symantec Endpoint Protection, EDR, antivirus</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Insider Threat & DLP</h3>
+                        <p>Teramind UBA, Data Loss Prevention, user behavior analytics, insider threat detection</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud Security</h3>
+                        <p>Cloudflare, AWS security, Azure security, cloud infrastructure protection, CDN security</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Risk Management</h3>
+                        <p>Risk assessments, incident response, root cause analysis, security audits, compliance reporting</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Business Continuity</h3>
+                        <p>BCP/DR planning, RTO/RPO optimization, disaster recovery testing, resilience strategies</p>
+                    </div>
+                </div>
+            </section>
 
-  <article>
-    <h4>Technical Support Engineer – Quick Heal Technologies Pvt Ltd</h4>
-    <span class="date">Oct 2005 – Oct 2008 | Chennai</span>
-    <ul>
-      <li>Performed malware analysis and endpoint troubleshooting.</li>
-      <li>Trained users on security best practices.</li>
-    </ul>
-  </article>
-</section>
+            <section>
+                <h2>Certifications</h2>
+                <div class="certifications">
+                    <div class="cert-item">
+                        <div class="cert-name">ISO/IEC 27001:2022 Lead Auditor</div>
+                        <div class="cert-details">Mastermind Assurance • Valid Dec 2025 to Dec 2028</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Cybersecurity Fundamentals</div>
+                        <div class="cert-details">IBM • Mar 2022</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Certificate of Proficiency</div>
+                        <div class="cert-details">Tenable • Jul 2021</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Advanced Network Security with Cisco ASA Firewall</div>
+                        <div class="cert-details">Sans Bound Solutions • Mar 2009</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Cisco Certified Network Associate (CCNA)</div>
+                        <div class="cert-details">Sansbound Networking School • Jul 2004</div>
+                    </div>
+                </div>
+            </section>
 
-<section>
-  <h3>Education</h3>
-  <ul>
-    <li><strong>M.Sc. Electronics</strong> – St. Joseph’s College, Trichy (2001–2003)</li>
-    <li><strong>B.Sc. Electronics Science</strong> – Sengunthar Arts & Science College (1998–2001)</li>
-  </ul>
-</section>
+            <section>
+                <div class="achievements">
+                    <h3>Key Achievements</h3>
+                    <ul>
+                        <li>Reduced unauthorized access incidents by 30%</li>
+                        <li>Improved compliance scores by 40%</li>
+                        <li>Enhanced threat remediation speed by 40%</li>
+                        <li>Reduced false positive alerts by 20%</li>
+                        <li>Improved RTO/RPO compliance by 25%</li>
+                        <li>Reduced mean time to response (MTTR) by 25%</li>
+                    </ul>
+                </div>
+            </section>
 
-<section>
-  <h3>Certifications</h3>
-  <ul>
-    <li>ISO/IEC 27001:2022 Lead Auditor (2025–2028)</li>
-    <li>Cisco Certified Network Associate (CCNA)</li>
-    <li>Advanced Network Security – Cisco ASA</li>
-    <li>IBM Cybersecurity Fundamentals</li>
-    <li>Tenable Certificate of Proficiency</li>
-  </ul>
-</section>
-
-<footer class="footer">
-  <p>© Kirubakaran Kamatchi | Information Security Manager</p>
-</footer>
-
+            <section>
+                <h2>Additional Information</h2>
+                <p><strong>Languages:</strong> English (Advanced), Tamil (Fluent)</p>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
