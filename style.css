@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #222;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.header h2 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+section {
+  padding: 20px 40px;
+}
+
+h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+ul {
+  margin: 10px 0 0 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  width: 45%;
+  margin-bottom: 6px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
